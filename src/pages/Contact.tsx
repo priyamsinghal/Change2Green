@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { isValidPhoneNumber } from 'libphonenumber-js';
 
 interface FormData {
   name: string;
@@ -10,7 +11,7 @@ interface FormData {
 
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({ mode: 'onBlur', reValidateMode: 'onChange' });
 
   const onSubmit = async (data: FormData) => {
     // Simulate form submission
@@ -22,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen py-16 bg-gray-50">
+    <div className="py-16 bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-md p-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center">Contact Us</h1>
@@ -42,7 +43,8 @@ const Contact = () => {
                 type="text"
                 id="name"
                 {...register('name', { required: 'Name is required' })}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                placeholder="Your full name"
+                className="mt-1 block w-full px-4 py-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-150"
               />
               {errors.name && (
                 <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -56,8 +58,11 @@ const Contact = () => {
               <input
                 type="tel"
                 id="phone"
-                {...register('phone', { required: 'Phone number is required' })}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                {...register('phone', { required: 'Phone number is required', validate: value => isValidPhoneNumber(value) || 'Invalid phone number' })}
+                inputMode="tel"
+                autoComplete="tel"
+                placeholder="e.g. +1 5551234567"
+                className="mt-1 block w-full px-4 py-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-150"
               />
               {errors.phone && (
                 <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>
@@ -78,7 +83,10 @@ const Contact = () => {
                     message: 'Invalid email address'
                   }
                 })}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                inputMode="email"
+                autoComplete="email"
+                placeholder="you@example.com"
+                className="mt-1 block w-full px-4 py-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-150"
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -93,7 +101,8 @@ const Contact = () => {
                 id="query"
                 rows={4}
                 {...register('query', { required: 'Query is required' })}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                placeholder="Enter your message"
+                className="mt-1 block w-full px-4 py-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 transition duration-150"
               />
               {errors.query && (
                 <p className="mt-1 text-sm text-red-600">{errors.query.message}</p>
