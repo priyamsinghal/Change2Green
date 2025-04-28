@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+    --color-bck-dark: oklch(30% 17% 136deg); /* #1E3610*/
+    --color-heading: oklch(82% 40% 76deg); /* #FFB42C */
+    --color-subtitle: oklch(78% 0% 90deg); /* #B6B6B6 */
+    --color-accent-green: oklch(74% 48% 133deg); /* #78C42D */
+    --color-accent-orange: oklch(58% 33% 60deg); /* #B06410 */
+    --color-accent-dark-green: oklch(62% 44% 144deg); /* #2FA137 */
+    --color-body-dark: oklch(72% 0% 90deg); /* #A5A5A5 */
+}

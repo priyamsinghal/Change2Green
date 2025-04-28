@@ -1,10 +1,10 @@
 // tailwind.config.cjs
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js,tsx}"],
+    content: ["./src/**/*.{html,jsx,js,tsx}", './public/index.html'],
     theme: {
       extend: {
-        colors: {
+        colors: { 
           primary: {
             50: '#f0fdf4',
             100: '#dcfce7',
