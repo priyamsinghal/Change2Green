@@ -1,59 +1,81 @@
 import React from 'react';
 
-const products = [
-  {
-    id: 1,
-    title: 'Recycled Polyester Fiber',
-    description: 'High-quality recycled polyester fiber made from post-consumer plastic bottles. Perfect for sustainable textile manufacturing.',
-    image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-  },
-  {
-    id: 2,
-    title: 'Sustainable Yarn',
-    description: 'Eco-friendly yarn produced from recycled materials, offering superior quality and reduced environmental impact.',
-    image: 'https://images.unsplash.com/photo-1544022613-e87ca75a784a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-  },
-  {
-    id: 3,
-    title: 'Eco Packaging',
-    description: 'Biodegradable and recyclable packaging solutions designed to minimize waste and environmental impact.',
-    image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
-  }
-];
-
 const Products = () => {
   return (
     <div className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900">Our Products</h1>
-          <p className="mt-4 text-xl text-gray-600">
-            Discover our range of sustainable textile solutions
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
-              <div className="h-64 relative">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {product.title}
-                </h3>
-                <p className="text-gray-600">
-                  {product.description}
-                </p>
-                <button className="mt-4 px-4 py-2 bg-primary-600 text-white rounded hover:bg-primary-700 transition duration-150">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          ))}
+        <h2 className="text-4xl font-bold text-gray-900 mb-8">Product Offerings</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white shadow rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">1. Optical Bleach (Undyed) Counts</h3>
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Count</th>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Notes</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr><td className="px-4 py-2 text-sm text-gray-600">2s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">6s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">8s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">10s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">2/10s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">14s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">18s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">2/18s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">20s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">26s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">30s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-white shadow rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">2. 10s Coloured Counts</h3>
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Color</th>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Count</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Pani / Mélange</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Pink</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Red</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Black</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Light Yellow</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-white shadow rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">3. 20s Items</h3>
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Color</th>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Count</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Black</td><td className="px-4 py-2 text-sm text-gray-600">20s Ne (Pre-colored)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-white shadow rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">4. 30s Items</h3>
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Type</th>
+                  <th className="px-4 py-2 text-left text-sm font-medium text-gray-700">Count</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr><td className="px-4 py-2 text-sm text-gray-600">PC (Poly-Cot Blend)</td><td className="px-4 py-2 text-sm text-gray-600">30s Ne</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
