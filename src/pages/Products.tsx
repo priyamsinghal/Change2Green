@@ -16,17 +16,17 @@ const Products = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr><td className="px-4 py-2 text-sm text-gray-600">2s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">6s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">8s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">10s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">2/10s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">14s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">18s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">2/18s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">20s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">26s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">30s Ne</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">2s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">6s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">8s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">10s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">2/10s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">14s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">18s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">2/18s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">20s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">26s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">30s</td><td className="px-4 py-2 text-sm text-gray-600">Optical Bleach (undyed)</td></tr>
               </tbody>
             </table>
           </div>
@@ -40,11 +40,11 @@ const Products = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr><td className="px-4 py-2 text-sm text-gray-600">Pani / Mélange</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">Pink</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">Red</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">Black</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
-                <tr><td className="px-4 py-2 text-sm text-gray-600">Light Yellow</td><td className="px-4 py-2 text-sm text-gray-600">10s Ne (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Pani / Mélange</td><td className="px-4 py-2 text-sm text-gray-600">10s (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Pink</td><td className="px-4 py-2 text-sm text-gray-600">10s (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Red</td><td className="px-4 py-2 text-sm text-gray-600">10s (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Black</td><td className="px-4 py-2 text-sm text-gray-600">10s (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Light Yellow</td><td className="px-4 py-2 text-sm text-gray-600">10s (Pre-colored)</td></tr>
               </tbody>
             </table>
           </div>
@@ -58,7 +58,7 @@ const Products = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr><td className="px-4 py-2 text-sm text-gray-600">Black</td><td className="px-4 py-2 text-sm text-gray-600">20s Ne (Pre-colored)</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">Black</td><td className="px-4 py-2 text-sm text-gray-600">20s (Pre-colored)</td></tr>
               </tbody>
             </table>
           </div>
@@ -72,7 +72,7 @@ const Products = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr><td className="px-4 py-2 text-sm text-gray-600">PC (Poly-Cot Blend)</td><td className="px-4 py-2 text-sm text-gray-600">30s Ne</td></tr>
+                <tr><td className="px-4 py-2 text-sm text-gray-600">PC (Poly-Cot Blend)</td><td className="px-4 py-2 text-sm text-gray-600">30s</td></tr>
               </tbody>
             </table>
           </div>
